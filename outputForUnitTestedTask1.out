@@ -1,0 +1,205 @@
+picocom v3.1
+
+port is        : /dev/ttyUSB0
+flowcontrol    : none
+baudrate is    : 74880
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
+
+Type [C-a] [C-h] to see available commands
+Terminal ready
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 7052, room 16 
+tail 12
+chksum 0xbb
+ho 0 tail 12 room 4
+load 0x3ffe8408, len 24, room 12 
+tail 12
+chksum 0x02
+ho 0 tail 12 room 4
+load 0x3ffe8420, len 3328, room 12 
+tail 4
+chksum 0xca
+csum 0xca
+[0;32mI (54) boot: ESP-IDF v3.4-65-gea598f11-dirty 2nd stage bootloader[0m
+[0;32mI (54) boot: compile time 15:17:01[0m
+[0;32mI (55) boot: SPI Speed      : 40MHz[0m
+[0;32mI (62) boot: SPI Mode       : DOUT[0m
+[0;32mI (68) boot: SPI Flash Size : 1MB[0m
+[0;32mI (74) boot: Partition Table:[0m
+[0;32mI (80) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (91) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (102) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (114) boot:  2 factory          factory app      00 00 00010000 000f0000[0m
+[0;32mI (125) boot: End of partition table[0m
+[0;32mI (132) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x163d4 ( 91092) map[0m
+[0;32mI (185) esp_image: segment 1: paddr=0x000263ec vaddr=0x402263e4 size=0x05da0 ( 23968) map[0m
+[0;32mI (196) esp_image: segment 2: paddr=0x0002c194 vaddr=0x3ffe8000 size=0x003dc (   988) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=0x0002c578 vaddr=0x40100000 size=0x00080 (   128) load[0m
+[0;32mI (210) esp_image: segment 4: paddr=0x0002c600 vaddr=0x40100080 size=0x04584 ( 17796) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+MUTEX CREATED SUCCESSFULLY 
+[0;32mI (254) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+GPIO 2 CONFIGURED AS OUTPUT 
+Going to attempt to make the tasks now 
+task 1 unit test took semaphore thing 
+task 1 took semaphore thing 
+Active delay for 500ms 
+Going to attempt to give back the mutex after resisting tempation (task1) 
+task1 gave back the mutex despite the temptations of inner greed 
+task1 deleted itself 
+Time Taken for unit test for task 1 part 1: 50ACTIVE DELAY WAS SUCCEDSSFUL WITHIN 10MS ACCURACY 
+ 
+TASK 1 SET HIGH SUCCESS 
+ 
+task 1 unit test took semaphore thing AGAIN
+COUNT = 1 
+ 
+***************************************************************
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 1 
+ 
+***************************************************************
+ticks = 58 
+***************************************************************
+***************************************************************
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 2 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 3 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 4 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 5 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 6 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 7 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 8 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 9 
+ 
+Could not take the mutex (task 1 delete prone version btw)
+Mutex reject count: 10 
+ 
+COUNT = 2 
+ 
+***************************************************************
+***************************************************************
+ticks = 160 
+***************************************************************
+***************************************************************
+task 1 test version will delete itself as it has not been able to run 10 times 
+ 
+TASK 1 DID NOT TOUCH PIN WHEN MUTEX UNAVAILABLE SUCCESS 
+ 
+TESTING COMPLETE: 
+ RESULTS: 3 SUCCESS/ 3 TOTAL TESTS 
+ 
+ 
+COUNT = 3 
+ 
+***************************************************************
+***************************************************************
+ticks = 262 
+***************************************************************
+***************************************************************
+COUNT = 4 
+ 
+***************************************************************
+***************************************************************
+ticks = 364 
+***************************************************************
+***************************************************************
+COUNT = 5 
+ 
+***************************************************************
+***************************************************************
+ticks = 466 
+***************************************************************
+***************************************************************
+COUNT = 6 
+ 
+***************************************************************
+***************************************************************
+ticks = 568 
+***************************************************************
+***************************************************************
+COUNT = 7 
+ 
+***************************************************************
+***************************************************************
+ticks = 670 
+***************************************************************
+***************************************************************
+COUNT = 8 
+ 
+***************************************************************
+***************************************************************
+ticks = 772 
+***************************************************************
+***************************************************************
+COUNT = 9 
+ 
+***************************************************************
+***************************************************************
+ticks = 874 
+***************************************************************
+***************************************************************
+COUNT = 10 
+ 
+***************************************************************
+***************************************************************
+ticks = 976 
+***************************************************************
+***************************************************************
+COUNT = 11 
+ 
+***************************************************************
+***************************************************************
+ticks = 1078 
+***************************************************************
+***************************************************************
+COUNT = 12 
+ 
+***************************************************************
+***************************************************************
+ticks = 1180 
+***************************************************************
+***************************************************************
+COUNT = 13 
+ 
+***************************************************************
+***************************************************************
+ticks = 1282 
+***************************************************************
+***************************************************************
+
+Terminating...
+Thanks for using picocom
