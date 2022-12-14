@@ -82,7 +82,7 @@ PASS REQUIREMENT: GPIO2 Level STILL LOW after 1.5 seconds and test version of ta
 
 The unit test task then deletes itself. 
 
-#RESULTS
+# RESULTS
 
 From the .out file generated using picocom. 
 
